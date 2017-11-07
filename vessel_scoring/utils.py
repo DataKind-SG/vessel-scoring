@@ -56,7 +56,7 @@ def cached(path):
     return cached
 
 def is_fishy(x):
-    return x["classification"] >= 0.5
+    return x["is_fishing"] >= 0.5
 
 def fishy(x):
     return x[is_fishy(x)]
